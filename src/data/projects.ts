@@ -1,0 +1,56 @@
+import type { Project } from '../types'
+
+export const projects: Project[] = [
+  {
+    id: 'market-data-engine', number: '01', title: 'High-Performance Market Data Engine',
+    eyebrow: 'Systems · Performance', status: 'In Progress', featured: true,
+    problem: 'How fast and predictably can market events move through a memory-conscious pipeline?',
+    description: 'A C++20 ingestion and processing engine designed to explore network I/O, concurrency, queue design, allocation, and tail latency under load.',
+    tags: ['C++20', 'Linux', 'Networking', 'Concurrency', 'CMake'],
+    architecture: ['Feed generator', 'Network receiver', 'Parser', 'Event pipeline', 'Order book'],
+    metrics: [{ label: 'p50 latency', value: 'Pending benchmark' }, { label: 'p99 latency', value: 'Pending benchmark' }, { label: 'throughput', value: 'Pending benchmark' }],
+  },
+  {
+    id: 'distributed-cache', number: '02', title: 'Distributed Multi-Tier Cache',
+    eyebrow: 'Backend · Infrastructure', status: 'Completed', featured: true,
+    problem: 'Reduce backend load without trading away consistency, resilience, or observability.',
+    description: 'Built a production-minded cache architecture with a local L1, Redis L2, persistent storage, request coalescing, failure handling, and load tests.',
+    tags: ['Go', 'Redis', 'PostgreSQL', 'Docker', 'Prometheus'],
+    architecture: ['Client', 'API', 'L1 cache', 'Redis L2', 'PostgreSQL'],
+  },
+  {
+    id: 'data-platform', number: '03', title: 'Real-Time Data Engineering Platform',
+    eyebrow: 'Data · Platform', status: 'Completed',
+    problem: 'Turn continuously arriving events into trustworthy, analytics-ready data.',
+    description: 'Built a locally reproducible batch and streaming platform focused on schema validation, incremental processing, data quality, and observability.',
+    tags: ['Python', 'SQL', 'Kafka', 'Spark', 'dbt'],
+    architecture: ['Event source', 'Kafka', 'Stream processing', 'Data lake', 'Warehouse'],
+  },
+  {
+    id: 'rag-platform', number: '04', title: 'AI Knowledge Platform',
+    eyebrow: 'AI · Backend', status: 'Completed',
+    problem: 'Build retrieval that is measurable, observable, and useful beyond a chatbot demo.',
+    description: 'Built a production-style RAG service covering ingestion, chunking, vector retrieval, reranking, evaluation, and a clean API boundary.',
+    tags: ['Python', 'FastAPI', 'PostgreSQL', 'pgvector', 'RAG'],
+    architecture: ['Documents', 'Ingestion', 'Vector index', 'Retrieval', 'API'],
+  },
+  {
+    id: 'spdk-raid', number: '05', title: 'SPDK RAID1',
+    eyebrow: 'Storage · Systems', status: 'Completed', featured: true,
+    problem: 'Explore fault-tolerant replication without leaving the userspace I/O path.',
+    description: 'Implemented a userspace RAID1 block-device layer using SPDK, exploring asynchronous I/O, replication, storage performance, and systems-level design.',
+    tags: ['C', 'C++', 'SPDK', 'NVMe', 'Linux'],
+    architecture: ['Application', 'RAID1 bdev', 'Async I/O', 'NVMe mirror A', 'NVMe mirror B'],
+    image: '/images/spdk-raid1-generated.png',
+  },
+  {
+    id: 'chicago-crime', number: '06', title: 'Chicago Crime Insights',
+    eyebrow: 'Analytics · Visualization', status: 'Completed',
+    problem: 'Where, when, and how do reported crime patterns change across Chicago?',
+    description: 'Explored geospatial, temporal, and categorical patterns in public crime data and presented the findings through an interactive Tableau dashboard.',
+    tags: ['Tableau', 'ETL', 'Python', 'R', 'Excel'],
+    architecture: ['Public dataset', 'Cleaning', 'Analysis', 'Geospatial model', 'Dashboard'],
+    demo: 'https://public.tableau.com/app/profile/aniruddha.sonawane/viz/ChicagoCrimeInsight/ChicagoCrimeInsights',
+    image: '/images/chicago-crime-generated.png',
+  },
+]

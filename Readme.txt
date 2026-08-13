@@ -1,1 +1,0 @@
-You get checkout the portfolio at https://aniruddha8699.github.io/
