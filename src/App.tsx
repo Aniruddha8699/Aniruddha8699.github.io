@@ -69,7 +69,7 @@ function App() {
       </section>
 
       <section className="section projects shell" id="projects">
-        <SectionHeading kicker="03 / Selected work" title="Problems worth going deep on." intro="Systems, platform, data, and AI projects—documented with architecture, tradeoffs, and measured results when available." />
+        <SectionHeading kicker="03 / Selected work" title="Problems worth going deep on." intro="Systems, platform, data, and AI projects, documented with architecture, tradeoffs, and measured results when available." />
         <div className="project-grid">{projects.map((project, i) => <ProjectCard key={project.id} project={project} large={i < 2} />)}</div>
       </section>
 
@@ -81,8 +81,8 @@ function App() {
       <section className="section education shell" id="education">
         <SectionHeading kicker="05 / Education" title="Foundations in information and computing." />
         <div className="education-grid">
-          <article className="education-card reveal"><span className="edu-year">2024 — 2026</span><div><p>University of Illinois Urbana-Champaign</p><h3>Master of Science in Information Management</h3><span>Champaign, Illinois</span></div></article>
-          <article className="education-card reveal"><span className="edu-year">2017 — 2021</span><div><p>Vishwakarma Institute of Information Technology</p><h3>Bachelor of Technology in Computer Engineering</h3><span>Pune, India</span></div></article>
+          <article className="education-card reveal"><span className="edu-year">2024 - 2026</span><div><p>University of Illinois Urbana-Champaign</p><h3>Master of Science in Information Management</h3><span>Champaign, Illinois</span></div></article>
+          <article className="education-card reveal"><span className="edu-year">2017 - 2021</span><div><p>Vishwakarma Institute of Information Technology</p><h3>Bachelor of Technology in Computer Engineering</h3><span>Pune, India</span></div></article>
         </div>
         <div className="leadership reveal"><span className="mono-label">Earlier leadership</span><p>Chairperson, VIIT ACM Student Chapter <i>·</i> Co-Founder, Machine Learning Forum VIIT <i>·</i> Vice President, IoT Forum VIIT</p></div>
       </section>

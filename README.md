@@ -1,4 +1,4 @@
-# Aniruddha Sonawane — Portfolio
+# Aniruddha Sonawane - Portfolio
 
 A responsive engineering portfolio built with React, TypeScript, and Vite. Content is data-driven so projects and experience can be updated without changing component markup.
 

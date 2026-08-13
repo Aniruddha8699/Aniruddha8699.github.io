@@ -41,7 +41,7 @@ export const projects: Project[] = [
     description: 'Implemented a userspace RAID1 block-device layer using SPDK, exploring asynchronous I/O, replication, storage performance, and systems-level design.',
     tags: ['C', 'C++', 'SPDK', 'NVMe', 'Linux'],
     architecture: ['Application', 'RAID1 bdev', 'Async I/O', 'NVMe mirror A', 'NVMe mirror B'],
-    image: '/images/spdk-raid1-generated.png',
+    image: '/images/spdk-raid1.png',
   },
   {
     id: 'chicago-crime', number: '06', title: 'Chicago Crime Insights',
@@ -51,6 +51,6 @@ export const projects: Project[] = [
     tags: ['Tableau', 'ETL', 'Python', 'R', 'Excel'],
     architecture: ['Public dataset', 'Cleaning', 'Analysis', 'Geospatial model', 'Dashboard'],
     demo: 'https://public.tableau.com/app/profile/aniruddha.sonawane/viz/ChicagoCrimeInsight/ChicagoCrimeInsights',
-    image: '/images/chicago-crime-generated.png',
+    image: '/images/chicago-crime.png',
   },
 ]
